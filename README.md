@@ -133,7 +133,7 @@ Then I will create a `JavaScript` file in the `joke` directory called `joke.js`.
 I Will Update the `joke.js` as follows - 
 ```
 const response = {
-    joke: "Why did the co cross the road? Because it wanted to watch a MOOvie."
+    joke: "Why did the cow cross the road? Because it wanted to watch a MOOvie."
 }
 
 module.exports = response;
