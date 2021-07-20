@@ -17,6 +17,8 @@ Each Route has a folder containing its own files.
 
 A Route can be linked by updating the `/config/routes.json` file.
 
+Currently, Only `GET` routes can be made in the MoonWalker JSON API.
+
 ## Documentation
 
 ### Creating MoonWalker JSON API.
