@@ -81,7 +81,92 @@ The `/jsonExample` Route is written in JSON.
 
 You can edit the File and the changes will show upon refreshing. 
 
-### Creating a New Route.
+### Creating a New Route (JSON).
+For Creating a new Route, create a new folder in the `app` directory and name it as your route. In the Below Example, we will use the example `/joke`. 
+
+I will first create a new directory in the `app` folder called `joke`. 
+
+Then I will create a `JSON` file in the `joke` directory called `joke.json`. 
+
+I Will Update the `joke.json` as follows - 
+```
+{
+    "joke": "Why Did the Cow cross the Road? Because it wanted to watch a MOOvie"
+}
+```
+
+Now, For the Route to show up, I will update the file `/config/routes.json`. 
+
+I will Update it as follows - 
+```
+[
+     {
+          "id": "0",
+          "description": "Index", 
+          "route": "/",
+          "renderFile": "/index/index.js"
+     }, 
+     {
+          "id": "1", 
+          "description": "IndexJSON", 
+          "route": "/jsonExample", 
+          "renderFile": "/indexJSON/index.json"
+     }, 
+     {
+          "id": "2", 
+          "description": "Joke", 
+          "route": "/joke", 
+          "renderFile": "/joke/joke.json"
+     }
+]
+```
+Now, Upon Refreshing, my joke will show up.
+
+### Creating a new Route (JavaScript)
+
+For Creating a new Route, create a new folder in the `app` directory and name it as your route. In the Below Example, we will use the example `/joke`. 
+
+I will first create a new directory in the `app` folder called `joke`. 
+
+Then I will create a `JavaScript` file in the `joke` directory called `joke.js`. 
+
+I Will Update the `joke.js` as follows - 
+```
+const response = {
+    joke: "Why did the co cross the road? Because it wanted to watch a MOOvie."
+}
+
+module.exports = response;
+```
+
+Now, For the Route to show up, I will update the file `/config/routes.json`. 
+
+I will Update it as follows - 
+```
+[
+     {
+          "id": "0",
+          "description": "Index", 
+          "route": "/",
+          "renderFile": "/index/index.js"
+     }, 
+     {
+          "id": "1", 
+          "description": "IndexJSON", 
+          "route": "/jsonExample", 
+          "renderFile": "/indexJSON/index.json"
+     }, 
+     {
+          "id": "2", 
+          "description": "Joke", 
+          "route": "/joke", 
+          "renderFile": "/joke/joke.js"
+     }
+]
+```
+
+Congratulations! You Successfully Created a new Route.
+
 
 
 
